@@ -1,0 +1,172 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-19T04:28:21.002Z",
+        "line": 3,
+        "name": "User registration with different data",
+        "description": "",
+        "id": "user-registration;user-registration-with-different-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on registration page",
+            "match": {
+              "location": "stepdefinition.UserRegistrationSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters following user details",
+            "match": {
+              "location": "stepdefinition.UserRegistrationSteps.user_enters_following_user_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Suraj",
+                  "Mishra",
+                  "mishrask@gmail.com",
+                  "9769226186",
+                  "Thane"
+                ]
+              },
+              {
+                "cells": [
+                  "Niraj",
+                  "Mishra",
+                  "Nirajk@gmail.com",
+                  "9820086949",
+                  "Thane"
+                ]
+              },
+              {
+                "cells": [
+                  "Mummy",
+                  "Mishra",
+                  "Mummyk@gmail.com",
+                  "7718086949",
+                  "Thane"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User registration should be successful",
+            "match": {
+              "location": "stepdefinition.UserRegistrationSteps.user_registration_should_be_successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-19T04:28:21.112Z",
+        "line": 15,
+        "name": "User registration with different data with columns",
+        "description": "",
+        "id": "user-registration;user-registration-with-different-data-with-columns",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User is on registration page",
+            "match": {
+              "location": "stepdefinition.UserRegistrationSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enters following user details with columns",
+            "match": {
+              "location": "stepdefinition.UserRegistrationSteps.user_enters_following_user_details_with_columns(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "First",
+                  "Last",
+                  "Email",
+                  "Mobile",
+                  "Location"
+                ]
+              },
+              {
+                "cells": [
+                  "Suraj",
+                  "Mishra",
+                  "mishrask@gmail.com",
+                  "9769226186",
+                  "Thane"
+                ]
+              },
+              {
+                "cells": [
+                  "Niraj",
+                  "Mishra",
+                  "Nirajk@gmail.com",
+                  "9820086949",
+                  "Thane"
+                ]
+              },
+              {
+                "cells": [
+                  "Mummy",
+                  "Mishra",
+                  "Mummyk@gmail.com",
+                  "7718086949",
+                  "Thane"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User registration should be successful",
+            "match": {
+              "location": "stepdefinition.UserRegistrationSteps.user_registration_should_be_successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User Registration",
+    "description": "",
+    "id": "user-registration",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/registration.feature",
+    "tags": []
+  }
+]
